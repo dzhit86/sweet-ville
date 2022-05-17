@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,regular,500,600,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/main.min.css">
   <title>Sweet Ville</title>
 </head>
@@ -20,6 +22,8 @@
           </picture>
         </a>
         <div class="header__menu">
+          <div class="header__burger"><span> </span><span> </span><span> </span>
+          </div>
           <nav class="menu-top">
             <ul class="menu-top__list">
               <li class="menu-top__item"><a class="menu-top__link" href="#">О нас</a>
@@ -38,7 +42,7 @@
           </nav>
         </div>
         <div class="header__contact">
-          <div class="top-contact"><a class="top-contact__num" href="#">+7(909) 739-16-15</a><a class="top-contact__btn btn" href="#">Заказать звонок</a>
+          <div class="top-contact"><a class="top-contact__num" href="tel:+79097391615">+7(909) 739-16-15</a><a class="top-contact__btn btn" href="#">Заказать звонок</a>
           </div>
         </div>
       </div>
@@ -48,20 +52,21 @@
     <div class="_container">
       <div class="hero__wrap">
         <div class="hero__info">
-          <h1 class="hero__title">Агентсво детских праздников <span class="accent">в Тюмени</span></h1><span class="hero__subtitle">Мы воплощаем детские мечты в реальность и знаем, как устроить незабываемый день рождения, выпускной, вечеринку или торжественное мероприятие.</span><a class="hero__btn btn" href="#">Заказать праздник</a>
-          <div class="hero__report"><span class="icon-star"></span><span>4.9</span><span>По отзывам в 2GIS</span>
-          </div>
-        </div>
-        <div class="hero__illust">
-          <div class="features-illust">
-            <div class="features-illust__ellipse">
-              <img class="features-illust__img" src="img/hero-girl.jpg" alt="Girl">
-              <div class="features-illust__tips"><span class="features-illust__tip">Работаем с 2015 года</span><span class="features-illust__tip">Фантастические костюмы</span><span class="features-illust__tip">Грамотная режиссура</span><span class="features-illust__tip">Профессиональные актёры</span>
-              </div>
-            </div>
-          </div>
+          <h1 class="hero__title">Агентство детских праздников <span class="_accent">в Тюмени</span></h1><span class="hero__subtitle">Мы воплощаем детские мечты в реальность и знаем, как устроить незабываемый день рождения, выпускной, вечеринку или торжественное мероприятие.</span><a class="hero__btn hero__btn_info btn" href="#">Заказать праздник</a>
+          <div
+          class="hero__report"><span class="icon-star"></span><span>4.9</span><span>По отзывам в 2GIS</span>
         </div>
       </div>
+      <div class="hero__illust">
+        <div class="features-illust">
+          <div class="features-illust__img">
+            <img src="img/hero-girl.jpg" alt="Girl">
+          </div>
+          <div class="features-illust__tips"><span class="features-illust__tip">Работаем с 2015 года</span><span class="features-illust__tip">Фантастические костюмы</span><span class="features-illust__tip">Грамотная режиссура</span><span class="features-illust__tip">Профессиональные актёры</span>
+          </div>
+        </div><a class="hero__btn hero__btn_illust btn" href="#">Заказать праздник</a>
+      </div>
+    </div>
     </div>
   </article>
   <article class="about">
@@ -127,7 +132,7 @@
             <div class="services__text">Полностью оборудованная площадка для проведения незабываемого мероприятия для наших любимых деток.</div>
           </div>
           <div class="services__item">
-            <div class="services__img"><span class="icon-balons"></span>
+            <div class="services__img"><span class="icon-baloon"></span>
             </div>
             <div class="services__name">Дополнения к празднику</div>
             <div class="services__text">Профессиональная видео и фото съёмка, украшения, подарки, вкусняшки, фокусы, сюрпризы и многое другое.</div>
@@ -148,7 +153,7 @@
       </div>
     </div>
   </article>
-  <article class="catalog">
+  <article class="catalog catalog_bg">
     <div class="_container">
       <div class="catalog__wrap">
         <h2 class="catalog__title">Шоу-программы</h2><span class="catalog__subtitle">Яркие, красочные, зажигательные и незабываемые шоу-программы на любой вкус. Создайте праздник, который ваш ребёнок запомнит на всё жизнь!</span>
@@ -160,7 +165,7 @@
             <div class="catalog__metas">
               <div class="catalog__meta"><span class="catalog__icon icon-clock"></span><span>45 мин.</span>
               </div>
-              <div class="catalog__meta"><span class="catalog__icon icon-man"></span><span>до 8 чел.</span>
+              <div class="catalog__meta"><span class="catalog__icon icon-user"></span><span>до 8 чел.</span>
               </div>
             </div>
             <div class="catalog__name">Песочные фантазии</div>
@@ -177,7 +182,7 @@
             <div class="catalog__metas">
               <div class="catalog__meta"><span class="catalog__icon icon-clock"></span><span>60 мин.</span>
               </div>
-              <div class="catalog__meta"><span class="catalog__icon icon-man"></span><span>до 8 чел.</span>
+              <div class="catalog__meta"><span class="catalog__icon icon-user"></span><span>до 8 чел.</span>
               </div>
             </div>
             <div class="catalog__name">Бьютибар</div>
@@ -187,8 +192,8 @@
               <div class="catalog__gift">
                 <div class="tooltip">
                   <div class="tooltip__link"><span class="icon-gift"></span>
-                  </div>
-                  <div class="tooltip__hint"> <span>Ростовая кукла на выбор в подарок!</span>
+                    <div class="tooltip__hint _noselect"><span>Ростовая кукла на выбор в подарок!</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -202,7 +207,7 @@
             <div class="catalog__metas">
               <div class="catalog__meta"><span class="catalog__icon icon-clock"></span><span>40 мин.</span>
               </div>
-              <div class="catalog__meta"><span class="catalog__icon icon-man"></span><span>до 20 чел.</span>
+              <div class="catalog__meta"><span class="catalog__icon icon-user"></span><span>до 20 чел.</span>
               </div>
             </div>
             <div class="catalog__name">Шоу гигантских пузырей «БУМ»</div>
@@ -219,7 +224,7 @@
             <div class="catalog__metas">
               <div class="catalog__meta"><span class="catalog__icon icon-clock"></span><span>20 мин.</span>
               </div>
-              <div class="catalog__meta"><span class="catalog__icon icon-man"></span><span>до 20 чел.</span>
+              <div class="catalog__meta"><span class="catalog__icon icon-user"></span><span>до 20 чел.</span>
               </div>
             </div>
             <div class="catalog__name">Фольгированное шоу «БУМ S»</div>
@@ -236,7 +241,7 @@
             <div class="catalog__metas">
               <div class="catalog__meta"><span class="catalog__icon icon-clock"></span><span>60 мин.</span>
               </div>
-              <div class="catalog__meta"><span class="catalog__icon icon-man"></span><span>до 10 чел.</span>
+              <div class="catalog__meta"><span class="catalog__icon icon-user"></span><span>до 10 чел.</span>
               </div>
             </div>
             <div class="catalog__name">Слайм шоу</div>
@@ -246,8 +251,8 @@
               <div class="catalog__gift">
                 <div class="tooltip">
                   <div class="tooltip__link"><span class="icon-gift"></span>
-                  </div>
-                  <div class="tooltip__hint"> <span>Ростовая кукла на выбор в подарок!</span>
+                    <div class="tooltip__hint _noselect"><span>Ростовая кукла на выбор в подарок!</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -261,7 +266,7 @@
             <div class="catalog__metas">
               <div class="catalog__meta"><span class="catalog__icon icon-clock"></span><span>60 мин.</span>
               </div>
-              <div class="catalog__meta"><span class="catalog__icon icon-man"></span><span>до 20 чел.</span>
+              <div class="catalog__meta"><span class="catalog__icon icon-user"></span><span>до 20 чел.</span>
               </div>
             </div>
             <div class="catalog__name">Крио шоу</div>
@@ -278,7 +283,7 @@
             <div class="catalog__metas">
               <div class="catalog__meta"><span class="catalog__icon icon-clock"></span><span>20 мин.</span>
               </div>
-              <div class="catalog__meta"><span class="catalog__icon icon-man"></span><span>до 20 чел.</span>
+              <div class="catalog__meta"><span class="catalog__icon icon-user"></span><span>до 20 чел.</span>
               </div>
             </div>
             <div class="catalog__name">Лабораторное шоу</div>
@@ -295,7 +300,7 @@
             <div class="catalog__metas">
               <div class="catalog__meta"><span class="catalog__icon icon-clock"></span><span>90 мин.</span>
               </div>
-              <div class="catalog__meta"><span class="catalog__icon icon-man"></span><span>до 20 чел.</span>
+              <div class="catalog__meta"><span class="catalog__icon icon-user"></span><span>до 20 чел.</span>
               </div>
             </div>
             <div class="catalog__name">Жаренное мороженое + Крио шоу</div>
@@ -305,8 +310,8 @@
               <div class="catalog__gift">
                 <div class="tooltip">
                   <div class="tooltip__link"><span class="icon-gift"></span>
-                  </div>
-                  <div class="tooltip__hint"> <span>Ростовая кукла на выбор в подарок!</span>
+                    <div class="tooltip__hint _noselect"><span>Ростовая кукла на выбор в подарок!</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -365,8 +370,8 @@
               <div class="catalog__gift">
                 <div class="tooltip">
                   <div class="tooltip__link"><span class="icon-gift"></span>
-                  </div>
-                  <div class="tooltip__hint"> <span>Ростовая кукла на выбор в подарок!</span>
+                    <div class="tooltip__hint _noselect"><span>Ростовая кукла на выбор в подарок!</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -429,8 +434,8 @@
               <div class="catalog__gift">
                 <div class="tooltip">
                   <div class="tooltip__link"><span class="icon-gift"></span>
-                  </div>
-                  <div class="tooltip__hint"> <span>Ростовая кукла на выбор в подарок!</span>
+                    <div class="tooltip__hint _noselect"><span>Ростовая кукла на выбор в подарок!</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -476,7 +481,7 @@
       <div class="adding__wrap">
         <h2 class="adding__title">Дополнения к вашей вечеринке</h2><span class="adding__subtitle">Вы всегда можете сделать ваш праздник ещё лучше, предлагаем самые полезные, весёлые и яркие дополнительные услуги на любой вкус.</span>
         <div class="adding__slider">
-          <div class="swiper adding-swiper">
+          <div class="swiper adding-swiper" id="swiperAdding">
             <div class="swiper-wrapper adding-swiper__wrapper">
               <article class="swiper-slide adding-swiper__slide" style="background-image:url(img/temp/bg/bg1.jpg)">
                 <div class="adding-swiper__name">Фотограф</div>
@@ -485,7 +490,7 @@
               </article>
               <article class="swiper-slide adding-swiper__slide" style="background-image:url(img/temp/bg/bg2.jpg)">
                 <div class="adding-swiper__name">Видеооператор</div>
-                <div class="adding-swiper__description">Видеосъёмка 60 минут + мантаж весёлого ролика о празднике</div>
+                <div class="adding-swiper__description">Видеосъёмка 60 минут + монтаж весёлого ролика о празднике</div>
                 <div class="adding-swiper__price">от 3 500 руб.</div>
               </article>
               <article class="swiper-slide adding-swiper__slide" style="background-image:url(img/temp/bg/bg3.jpg)">
@@ -494,8 +499,12 @@
                 <div class="adding-swiper__price">от 2 500 руб.</div>
               </article>
             </div>
-            <div class="swiper-button-prev adding-swiper__btn adding-swiper__btn_prev"></div>
-            <div class="swiper-button-next adding-swiper__btn adding-swiper__btn_next"></div>
+          </div>
+          <div class="adding-swiper__navs">
+            <div class="swiper-btn adding-swiper__btn adding-swiper__btn_prev"><span class="icon-arrow-l"></span>
+            </div>
+            <div class="swiper-btn adding-swiper__btn adding-swiper__btn_next"><span class="icon-arrow-r"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -506,7 +515,7 @@
       <section class="ourarea__main">
         <div class="ourarea__wrap">
           <div class="ourarea__slide">
-            <div class="swiper ourarea-swiper">
+            <div class="swiper ourarea-swiper" id="swiperOurArea">
               <div class="swiper-wrapper ourarea-swiper__wrapper">
                 <article class="swiper-slide ourarea-swiper__slide">
                   <div class="ourarea-swiper__img">
@@ -516,32 +525,37 @@
                 </article>
                 <article class="swiper-slide ourarea-swiper__slide">
                   <div class="ourarea-swiper__img">
-                    <img src="img/temp/ourplace.jpg" alt="Photo">
+                    <img src="img/temp/ourplace1.jpg" alt="Photo">
                   </div>
-                  <div class="ourarea-swiper__address">Адрес: г. Тюмень, ул. Орджоникидзе 63а (ТЦ ЦУМ)</div>
+                  <div class="ourarea-swiper__address">Адрес: г. Тюмень, ул. Ленина 15</div>
                 </article>
                 <article class="swiper-slide ourarea-swiper__slide">
                   <div class="ourarea-swiper__img">
-                    <img src="img/temp/ourplace.jpg" alt="Photo">
+                    <img src="img/temp/ourplace2.jpg" alt="Photo">
                   </div>
-                  <div class="ourarea-swiper__address">Адрес: г. Тюмень, ул. Орджоникидзе 63а (ТЦ ЦУМ)</div>
+                  <div class="ourarea-swiper__address">Адрес: г. Тюмень, ул. Пушкина 10</div>
                 </article>
               </div>
-              <div class="swiper-button-prev ourarea-swiper__btn ourarea-swiper__btn_prev"></div>
-              <div class="swiper-button-next ourarea-swiper__btn ourarea-swiper__btn_next"></div>
+              <div class="ourarea-swiper__navs">
+                <div class="swiper-btn ourarea-swiper__btn ourarea-swiper__btn_prev"><span class="icon-arrow-l"></span>
+                </div>
+                <div class="swiper-btn ourarea-swiper__btn ourarea-swiper__btn_next"><span class="icon-arrow-r"></span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="ourarea__info">
             <h2 class="ourarea__title">Наша площадка для вашего праздника</h2>
-            <div class="ourarea__subtitle"></div>
+            <div class="ourarea__subtitle">Воспользуйтесь нашим пространством!
+              <br>Просторное, светлое, оборудованное и безопасное место для проведения незабываемого праздника в самом центре города.</div>
             <ul class="ourarea__ul">
-              <li class="ourarea__li">150 кв. метров</li>
-              <li class="ourarea__li">Обеденная зона с панорамным видом на город</li>
-              <li class="ourarea__li">Просторная зона для активностей</li>
-              <li class="ourarea__li">Большой батут</li>
-              <li class="ourarea__li">Горка и лабиринт с сухим бассейном из шариков</li>
-              <li class="ourarea__li">Интерактивные игрушки</li>
-              <li class="ourarea__li">Профессиональная акустическая система</li>
+              <li class="ourarea__li"><span class="icon-yes"></span> 150 кв. метров</li>
+              <li class="ourarea__li"><span class="icon-yes"></span> Обеденная зона с панорамным видом на город</li>
+              <li class="ourarea__li"><span class="icon-yes"></span> Просторная зона для активностей</li>
+              <li class="ourarea__li"><span class="icon-yes"></span> Большой батут</li>
+              <li class="ourarea__li"><span class="icon-yes"></span> Горка и лабиринт с сухим бассейном из шариков</li>
+              <li class="ourarea__li"><span class="icon-yes"></span> Интерактивные игрушки</li>
+              <li class="ourarea__li"><span class="icon-yes"></span> Профессиональная акустическая система</li>
             </ul>
           </div>
         </div>
@@ -549,200 +563,348 @@
       <section class="ourarea__prices">
         <div class="prices">
           <h3 class="prices__title">Цены на аренду площадки</h3>
-          <table class="prices__table">
-            <thead class="prices__thead">
-              <tr>
-                <th></th>
-                <th><span>Аренда</span><span>2 000 руб.</span>
-                </th>
-                <th><span>Пакет Хорошо</span><span>8 500 руб.</span>
-                </th>
-                <th><span>Пакет Супер</span><span>12 500 руб.            </span>
-                </th>
-                <th><span>Пакет Вау</span><span>17 500 руб.</span>
-                </th>
-              </tr>
-            </thead>
-            <tfoot class="prices__tfoot">
-              <tr>
-                <th></th>
-                <td><a class="btn" href="#">Выбрать</a>
-                </td>
-                <td><a class="btn" href="#">Выбрать</a>
-                </td>
-                <td><a class="btn" href="#">Выбрать</a>
-                </td>
-                <td><a class="btn" href="#">Выбрать</a>
-                </td>
-              </tr>
-            </tfoot>
-            <tbody class="prices__tbody">
-              <tr>
-                <th>Аренда площадки (3 часа)</th>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-              </tr>
-              <tr>
-                <th>Закрытие площадки для посторонних</th>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-              </tr>
-              <tr>
-                <th>Праздничное украшенние обеденной зоны</th>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-              </tr>
-              <tr>
-                <th>Фоновая музыка</th>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-              </tr>
-              <tr>
-                <th>Куллер с горячей и холодной водой</th>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-              </tr>
-              <tr>
-                <th>Чай, кофе, сахар без ограничений</th>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-              </tr>
-              <tr>
-                <th>Клининг и вынос мусора</th>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-              </tr>
-              <tr>
-                <th>Аниматор (40 мин.) или Шоу «Мыльных пузырей» (45-60 мин.)</th>
-                <td><span class="icon-no"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-              </tr>
-              <tr>
-                <th>Генератор мыльных пузырей (аппарат для распыления)</th>
-                <td><span class="icon-no"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-              </tr>
-              <tr>
-                <th>Профессиональный аквагример (60 мин.)</th>
-                <td><span class="icon-no"></span>
-                </td>
-                <td><span class="icon-no"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-              </tr>
-              <tr>
-                <th>Фотограф (60 мин.) + обработка фотографий</th>
-                <td><span class="icon-no"></span>
-                </td>
-                <td><span class="icon-no"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-              </tr>
-              <tr>
-                <th>Фольгированное шоу (20 мин.)</th>
-                <td><span class="icon-no"></span>
-                </td>
-                <td><span class="icon-no"></span>
-                </td>
-                <td><span class="icon-no"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <div class="tooltip">
-                    <div class="tooltip__link"><span>Тематическая декорация в стиле вашего праздника</span>
+          <div class="prices__wrap">
+            <table class="prices__table">
+              <thead class="prices__thead">
+                <tr>
+                  <th></th>
+                  <th>
+                    <div><span>Аренда</span><span>2 000 руб.</span>
                     </div>
-                    <div class="tooltip__hint">
-                      <ul>
-                        <li>10 гелиевых шаров;</li>
-                        <li>Фольгированная цифра;</li>
-                        <li>Стаканчики, тарелочки, приборы;</li>
-                        <li>Скатерти;</li>
-                        <li>Колпачки;</li>
-                        <li>Салфетки;</li>
-                        <li>Трубочки.</li>
-                      </ul>
+                  </th>
+                  <th>
+                    <div><span>Пакет Хорошо</span><span>8 500 руб.</span>
                     </div>
-                  </div>
-                </th>
-                <td><span class="icon-no"></span>
-                </td>
-                <td><span class="icon-no"></span>
-                </td>
-                <td><span class="icon-no"></span>
-                </td>
-                <td><span class="icon-yes"></span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                  </th>
+                  <th>
+                    <div><span>Пакет Супер</span><span>12 500 руб.            </span>
+                    </div>
+                  </th>
+                  <th>
+                    <div><span>Пакет Вау</span><span>17 500 руб.</span>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tfoot class="prices__tfoot">
+                <tr>
+                  <td></td>
+                  <td>
+                    <div><a class="btn" href="#">Выбрать</a>
+                    </div>
+                  </td>
+                  <td>
+                    <div><a class="btn" href="#">Выбрать</a>
+                    </div>
+                  </td>
+                  <td>
+                    <div><a class="btn" href="#">Выбрать</a>
+                    </div>
+                  </td>
+                  <td>
+                    <div><a class="btn" href="#">Выбрать</a>
+                    </div>
+                  </td>
+                </tr>
+              </tfoot>
+              <tbody class="prices__tbody">
+                <tr>
+                  <td>
+                    <div>Аренда площадки (3 часа)</div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>Закрытие площадки для посторонних</div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>Праздничное украшенние обеденной зоны</div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>Фоновая музыка</div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>Куллер с горячей и холодной водой</div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>Чай, кофе, сахар без ограничений</div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>Клининг и вынос мусора</div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>Аниматор (40 мин.) или Шоу «Мыльных пузырей» (45-60 мин.)</div>
+                  </td>
+                  <td>
+                    <div><span class="icon-no"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>Генератор мыльных пузырей (аппарат для распыления)</div>
+                  </td>
+                  <td>
+                    <div><span class="icon-no"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>Профессиональный аквагример (60 мин.)</div>
+                  </td>
+                  <td>
+                    <div><span class="icon-no"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-no"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>Фотограф (60 мин.) + обработка фотографий</div>
+                  </td>
+                  <td>
+                    <div><span class="icon-no"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-no"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>Фольгированное шоу (20 мин.)</div>
+                  </td>
+                  <td>
+                    <div><span class="icon-no"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-no"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-no"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div>
+                      <div class="tooltip">
+                        <div class="tooltip__link"><span>Тематическая декорация в стиле вашего праздника</span>
+                          <div class="tooltip__hint _noselect">
+                            <ul>
+                              <li>10 гелиевых шаров;</li>
+                              <li>Фольгированная цифра;</li>
+                              <li>Стаканчики, тарелочки, приборы;</li>
+                              <li>Скатерти;</li>
+                              <li>Колпачки;</li>
+                              <li>Салфетки;</li>
+                              <li>Трубочки.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-no"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-no"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-no"></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div><span class="icon-yes"></span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <div class="prices__hint">
             <div class="annotation">
-              <div class="annotation__item"><span class="icon-excmark annotation__icon"></span>
+              <div class="annotation__item"><span class="icon-mark-1 annotation__icon"></span>
               </div>
-              <div class="annotation__item"><span class="annotation__title"></span>
+              <div class="annotation__item"><span class="annotation__title">Также к нам можно прийти поиграть с ребёнком, обязательно по предварительному звонку.</span>
                 <div class="annotation__text">
                   <p>Стоимость: 30 минут - 150 рублей, 60 минут - 300 рублей.</p>
                   <p>Дети до 3х лет находятся в игровой комнате в сопровождении родителей!</p>
@@ -754,7 +916,7 @@
       </section>
     </div>
   </article>
-  <article class="banner-order">
+  <article class="banner-order banner-order_2">
     <div class="_container">
       <div class="banner-order__wrap">
         <div class="banner-order__info">
@@ -764,15 +926,10 @@
         </div>
         <div class="banner-order__illust">
           <div class="banner-order__img">
-            <img src="img/order2.jpg" alt="Заказать">
-          </div>
-          <div class="banner-order__bg"></div>
-          <div class="banner-order__tips">
-            <div class="banner-order__tip">Работаем по договору</div>
-            <div class="banner-order__tip">Комплексное решение под ваши задачи</div>
-            <div class="banner-order__tip">Полный пакет закрывающих документов</div>
-            <div class="banner-order__tip">Наличе сертификата соответствия и всех разрешительных документов</div>
-            <div class="banner-order__tip">Стабильное качество</div>
+            <picture>
+              <source srcset="img/order2.webp" type="image/webp">
+                <img src="img/order2.png" alt="Заказать">
+            </picture>
           </div>
         </div>
       </div>
@@ -783,55 +940,33 @@
       <div class="gallery__wrap">
         <h2 class="gallery__title">Фотогалерея</h2>
         <div class="gallery__slider">
-          <div class="swiper gallery-swiper">
+          <div class="swiper gallery-swiper" id="swiperGallery">
             <div class="swiper-wrapper gallery-swiper__wrapper">
               <article class="swiper-slide gallery-swiper__slide">
                 <div class="gallery-swiper__wrap">
-                  <div class="gallery-swiper__img">
-                    <img src="img/temp/gallery/01.jpg" alt="Photo">
-                  </div>
-                  <div class="gallery-swiper__img">
-                    <img src="img/temp/gallery/02.jpg" alt="Photo">
-                  </div>
-                  <div class="gallery-swiper__img">
-                    <img src="img/temp/gallery/03.jpg" alt="Photo">
-                  </div>
-                  <div class="gallery-swiper__img">
-                    <img src="img/temp/gallery/04.jpg" alt="Photo">
-                  </div>
-                  <div class="gallery-swiper__img">
-                    <img src="img/temp/gallery/05.jpg" alt="Photo">
-                  </div>
-                  <div class="gallery-swiper__img">
-                    <img src="img/temp/gallery/06.jpg" alt="Photo">
-                  </div>
+                  <div class="gallery-swiper__img" style="background-image: url(img/temp/gallery/01.jpg)"></div>
+                  <div class="gallery-swiper__img" style="background-image: url(img/temp/gallery/02.jpg)"></div>
+                  <div class="gallery-swiper__img" style="background-image: url(img/temp/gallery/03.jpg)"></div>
+                  <div class="gallery-swiper__img" style="background-image: url(img/temp/gallery/04.jpg)"></div>
+                  <div class="gallery-swiper__img" style="background-image: url(img/temp/gallery/05.jpg)"></div>
+                  <div class="gallery-swiper__img" style="background-image: url(img/temp/gallery/06.jpg)"></div>
                 </div>
               </article>
               <article class="swiper-slide gallery-swiper__slide">
                 <div class="gallery-swiper__wrap">
-                  <div class="gallery-swiper__img">
-                    <img src="img/temp/gallery/01.jpg" alt="Photo">
-                  </div>
-                  <div class="gallery-swiper__img">
-                    <img src="img/temp/gallery/02.jpg" alt="Photo">
-                  </div>
-                  <div class="gallery-swiper__img">
-                    <img src="img/temp/gallery/03.jpg" alt="Photo">
-                  </div>
-                  <div class="gallery-swiper__img">
-                    <img src="img/temp/gallery/04.jpg" alt="Photo">
-                  </div>
-                  <div class="gallery-swiper__img">
-                    <img src="img/temp/gallery/05.jpg" alt="Photo">
-                  </div>
-                  <div class="gallery-swiper__img">
-                    <img src="img/temp/gallery/06.jpg" alt="Photo">
-                  </div>
+                  <div class="gallery-swiper__img" style="background-image: url(img/temp/gallery/01.jpg)"></div>
+                  <div class="gallery-swiper__img" style="background-image: url(img/temp/gallery/02.jpg)"></div>
+                  <div class="gallery-swiper__img" style="background-image: url(img/temp/gallery/03.jpg)"></div>
+                  <div class="gallery-swiper__img" style="background-image: url(img/temp/gallery/04.jpg)"></div>
+                  <div class="gallery-swiper__img" style="background-image: url(img/temp/gallery/05.jpg)"></div>
+                  <div class="gallery-swiper__img" style="background-image: url(img/temp/gallery/06.jpg)"></div>
                 </div>
               </article>
             </div>
-            <div class="swiper-button-prev gallery-swiper__btn gallery-swiper__btn_prev"></div>
-            <div class="swiper-button-next gallery-swiper__btn gallery-swiper__btn_next"></div>
+          </div>
+          <div class="swiper-btn gallery-swiper__btn gallery-swiper__btn_prev"><span class="icon-arrow-l"></span>
+          </div>
+          <div class="swiper-btn gallery-swiper__btn gallery-swiper__btn_next"><span class="icon-arrow-r"></span>
           </div>
         </div>
       </div>
@@ -841,7 +976,7 @@
     <div class="review__wrap">
       <h2 class="review__title">Почитайте, что говорят о нас  клиенты</h2>
       <div class="review__slider">
-        <div class="swiper review-swiper">
+        <div class="swiper review-swiper" id="swiperReview">
           <div class="swiper-wrapper review-swiper__wrapper">
             <article class="swiper-slide review-swiper__slide">
               <div class="review-swiper__title">Супер!</div>
@@ -884,13 +1019,19 @@
             </article>
           </div>
         </div>
+        <div class="review-swiper__navs">
+          <div class="swiper-btn review-swiper__btn review-swiper__btn_prev"><span class="icon-arrow-l"></span>
+          </div>
+          <div class="swiper-btn review-swiper__btn review-swiper__btn_next"><span class="icon-arrow-r">                   </span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <article class="faq">
     <div class="_container">
       <div class="faq__wrap">
-        <h2 class="faq__title"></h2>
+        <h2 class="faq__title">Часто задаваемые вопросы</h2>
         <div class="faq__container">
           <article class="faq__item">
             <h3 class="faq__name">Почему выбирают Sweet Ville? </h3>
@@ -939,58 +1080,64 @@
     </div>
   </article>
   <footer class="footer">
-    <div class="_container">
-      <div class="footer__top">
-        <div class="footer__item">
-          <a class="footer__logo" href="#">
-            <img src="img/logo.svg" alt="Sweet Ville">
-          </a><span class="footer__subtitle">Подарите ребёнку лучший праздник в его жизни.</span>
-        </div>
-        <div class="footer__item">
-          <nav class="menu-bottom">
-            <div class="menu-bottom__title">Услуги</div>
-            <ul class="menu-bottom__list">
-              <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Персонажи</a>
-              </li>
-              <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Шоу программы</a>
-              </li>
-              <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Площадка</a>
-              </li>
-              <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Юр. лицам</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer__item">
-          <nav class="menu-bottom">
-            <div class="menu-bottom__title">Компания</div>
-            <ul class="menu-bottom__list">
-              <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">О нас</a>
-              </li>
-              <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Отзывы</a>
-              </li>
-              <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Франшиза</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer__item">
-          <nav class="menu-bottom">
-            <div class="menu-bottom__title">Контакты</div>
-            <ul class="menu-bottom__list">
-              <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">+7 (909)739-16-15</a>
-              </li>
-              <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">sv.sweetville@gmail.com</a>
-              </li>
-              <li class="menu-bottom__item"> <span class="menu-bottom__text">г.Тюмень, ул.Орджоникидзе, 63а</span>
-              </li>
-            </ul>
-          </nav>
+    <div class="footer__top">
+      <div class="_container">
+        <div class="footer__wrap footer__wrap_grid">
+          <div class="footer__item">
+            <a class="footer__logo" href="#">
+              <img src="img/logo.svg" alt="Sweet Ville">
+            </a><span class="footer__subtitle">Подарите ребёнку лучший праздник в его жизни.</span>
+          </div>
+          <div class="footer__item">
+            <nav class="menu-bottom">
+              <div class="menu-bottom__title">Услуги</div>
+              <ul class="menu-bottom__list">
+                <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Персонажи</a>
+                </li>
+                <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Шоу программы</a>
+                </li>
+                <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Площадка</a>
+                </li>
+                <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Юр. лицам</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__item">
+            <nav class="menu-bottom">
+              <div class="menu-bottom__title">Компания</div>
+              <ul class="menu-bottom__list">
+                <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">О нас</a>
+                </li>
+                <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Отзывы</a>
+                </li>
+                <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Франшиза</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__item">
+            <nav class="menu-bottom">
+              <div class="menu-bottom__title">Контакты</div>
+              <ul class="menu-bottom__list">
+                <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">+7 (909)739-16-15</a>
+                </li>
+                <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">sv.sweetville@gmail.com</a>
+                </li>
+                <li class="menu-bottom__item"> <span class="menu-bottom__text">г.Тюмень, ул.Орджоникидзе, 63а</span>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
-      <div class="footer__bottom">
-        <div class="footer__copyright">2022 Все права защищены</div><a class="footer__politics" href="#">Политика обработки персональных данных</a>
-        <div class="footer__made">Разработка сайта: <a href="#">FranchFriend.ru</a>
+    </div>
+    <div class="footer__bottom">
+      <div class="_container">
+        <div class="footer__wrap footer__wrap_flex">
+          <div class="footer__copyright">2022 Все права защищены</div><a class="footer__politics" href="#">Политика обработки персональных данных</a>
+          <div class="footer__made">Разработка сайта: <a href="#">FranchFriend.ru</a>
+          </div>
         </div>
       </div>
     </div>
