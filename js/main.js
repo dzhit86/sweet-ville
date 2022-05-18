@@ -38,6 +38,22 @@ $(document).ready(function () {
         spaceBetween: 20,
         slidesPerView: 1.2
       },
+      400: {
+        spaceBetween: 20,
+        slidesPerView: 1.4
+      },
+      480: {
+        spaceBetween: 20,
+        slidesPerView: 1.7
+      },
+      550: {
+        spaceBetween: 20,
+        slidesPerView: 2
+      },
+      660: {
+        spaceBetween: 20,
+        slidesPerView: 2.5
+      },
       768: {
         spaceBetween: 20,
         slidesPerView: 3
@@ -65,7 +81,7 @@ $(document).ready(function () {
         spaceBetween: 20,
         slidesPerView: 2
       },
-      970: {
+      993: {
         spaceBetween: 25,
         slidesPerView: 3
       }
@@ -75,11 +91,27 @@ $(document).ready(function () {
     direction: 'horizontal',
     loop: true,
     pagination: false,
-    spaceBetween: 20,
-    slidesPerView: 1,
     navigation: {
       prevEl: '.gallery-swiper__btn_prev',
       nextEl: '.gallery-swiper__btn_next'
+    },
+    breakpoints: {
+      320: {
+        spaceBetween: 20,
+        slidesPerView: 0.6,
+        freeMode: {
+          enabled: true,
+          sticky: false,
+          momentumBounce: false
+        }
+      },
+      660: {
+        spaceBetween: 20,
+        slidesPerView: 1,
+        freeMode: {
+          enabled: false
+        }
+      }
     }
   });
   var sliderReview = new Swiper('#swiperReview', {
