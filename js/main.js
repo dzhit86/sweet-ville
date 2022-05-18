@@ -38,19 +38,11 @@ $(document).ready(function () {
         spaceBetween: 20,
         slidesPerView: 1.2
       },
-      420: {
-        spaceBetween: 20,
-        slidesPerView: 1.5
-      },
-      520: {
-        spaceBetween: 20,
-        slidesPerView: 2
-      },
-      650: {
-        spaceBetween: 20,
-        slidesPerView: 2.5
-      },
       768: {
+        spaceBetween: 20,
+        slidesPerView: 3
+      },
+      970: {
         spaceBetween: 20,
         slidesPerView: 1
       }
@@ -66,10 +58,14 @@ $(document).ready(function () {
     },
     breakpoints: {
       320: {
-        spaceBetween: 25,
+        spaceBetween: 20,
         slidesPerView: 1.2
       },
       768: {
+        spaceBetween: 20,
+        slidesPerView: 2
+      },
+      970: {
         spaceBetween: 25,
         slidesPerView: 3
       }
