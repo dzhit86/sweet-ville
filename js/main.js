@@ -134,5 +134,23 @@ $(document).ready(function () {
       nextEl: '.review-swiper__btn_next',
       prevEl: '.review-swiper__btn_prev'
     }
+  }); // Smooth scroll
+
+  var smoothLink = $('a[data-smooth]');
+  smoothLink.on('click', function (event) {
+    event.preventDefault();
+    var sc = $(this).attr("href"); // id цели
+
+    if ($(sc).length) {
+      var pad = $(sc).outerHeight() - $(sc).height() - 100,
+          // расстояние для позиционирования
+      dn = $(sc).offset().top + pad; // положение цели на странице
+
+      $('html, body').animate({
+        scrollTop: dn
+      }, 1000);
+    } else {
+      console.log('Нет такой секции!');
+    }
   });
 });
