@@ -2050,6 +2050,8 @@ button.swiper-pagination-bullet {
   color: #555B8D;
   font-size: 16px;
   white-space: nowrap;
+  position: relative;
+  bottom: -2px;
 }
 
 .hero {
@@ -2106,7 +2108,7 @@ button.swiper-pagination-bullet {
 .hero__subtitle {
   display: block;
   line-height: 1.2em;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 40px;
 }
 
@@ -2143,7 +2145,7 @@ button.swiper-pagination-bullet {
 }
 
 .hero__report span:nth-child(3) {
-  font-weight: 400;
+  font-weight: 300;
   margin-right: 0;
   font-size: 16px;
 }
@@ -2256,7 +2258,7 @@ button.swiper-pagination-bullet {
 
 .about__text {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 18px;
   max-width: 580px;
   line-height: 1.3em;
@@ -2327,7 +2329,6 @@ button.swiper-pagination-bullet {
 
 .stats__name {
   font-size: 18px;
-  font-weight: 500;
 }
 
 .services {
@@ -2379,7 +2380,7 @@ button.swiper-pagination-bullet {
 
 .services__subtitle {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 40px;
   max-width: 580px;
   line-height: 1.3em;
@@ -2419,12 +2420,10 @@ button.swiper-pagination-bullet {
 .services__name {
   font-size: 21px;
   line-height: 2em;
-  font-weight: 500;
-  margin-bottom: 5px;
 }
 
 .services__text {
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2em;
   font-size: 18px;
 }
@@ -2502,7 +2501,7 @@ button.swiper-pagination-bullet {
 
 .catalog__subtitle {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 40px;
   max-width: 610px;
   line-height: 1.3em;
@@ -2590,7 +2589,7 @@ button.swiper-pagination-bullet {
 }
 
 .catalog__description {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 14px;
   margin-bottom: 10px;
   line-height: 1.2;
@@ -2758,6 +2757,10 @@ button.swiper-pagination-bullet {
   margin-bottom: 30px;
 }
 
+.banner-order_2 .banner-order__description {
+  font-weight: 300;
+}
+
 .banner-order_2 .banner-order__info {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 500px;
@@ -2845,7 +2848,7 @@ button.swiper-pagination-bullet {
 
 .adding__subtitle {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 45px;
   max-width: 580px;
   line-height: 1.3em;
@@ -2957,7 +2960,7 @@ button.swiper-pagination-bullet {
 
 .ourarea__subtitle {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 25px;
   line-height: 1.2em;
 }
@@ -2974,6 +2977,7 @@ button.swiper-pagination-bullet {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 15px;
+  font-weight: regular;
 }
 
 .ourarea__li span {
@@ -3023,8 +3027,12 @@ button.swiper-pagination-bullet {
 
 .ourarea-swiper__address {
   margin-top: 15px;
-  margin-left: 120px;
+  margin-left: 110px;
   line-height: 1.2em;
+}
+
+.ourarea-swiper__slide {
+  padding-bottom: 10px;
 }
 
 .ourarea-swiper__navs {
@@ -3039,8 +3047,8 @@ button.swiper-pagination-bullet {
   align-items: center;
   z-index: 3;
   background: #F8F8F8;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-bottom: 15px;
 }
 
 .ourarea-swiper__navs > *:first-child {
@@ -3052,6 +3060,9 @@ button.swiper-pagination-bullet {
   font-weight: 600;
   margin-bottom: 35px;
   font-size: 30px;
+  max-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prices__wrap {
@@ -3137,7 +3148,7 @@ button.swiper-pagination-bullet {
 
 .prices__tbody tr td:first-child > div {
   text-align: left;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2em;
   max-width: 100%;
 }
@@ -3508,11 +3519,10 @@ button.swiper-pagination-bullet {
   font-size: 21px;
   margin-bottom: 10px;
   line-height: 1.2em;
-  font-weight: 500;
 }
 
 .faq__text {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   line-height: 1.2em;
 }
@@ -3522,7 +3532,7 @@ button.swiper-pagination-bullet {
 }
 
 .faq__li {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   line-height: 1.2em;
   list-style: disc;
@@ -3575,7 +3585,7 @@ button.swiper-pagination-bullet {
 
 .footer__subtitle {
   display: block;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.2em;
 }
@@ -3599,19 +3609,19 @@ button.swiper-pagination-bullet {
 
 .footer__copyright {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   margin-right: 100px;
 }
 
 .footer__politics {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .footer__made {
   margin-left: auto;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .menu-bottom__title {
@@ -3627,9 +3637,18 @@ button.swiper-pagination-bullet {
   margin-bottom: 0;
 }
 
+.menu-bottom__item_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .menu-bottom__link,
 .menu-bottom__text {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   color: #5D6A79;
 }
@@ -3643,6 +3662,15 @@ button.swiper-pagination-bullet {
 
 .menu-bottom__link:hover {
   border-color: #5D6A79;
+}
+
+.menu-bottom__link_soc {
+  border: none;
+}
+
+.menu-bottom__link_vk {
+  font-size: 30px;
+  color: #4489C8;
 }
 
 .page {
@@ -3675,7 +3703,6 @@ button.swiper-pagination-bullet {
 }
 
 .annotation__title {
-  font-weight: 500;
   display: inline-block;
   line-height: 1.5em;
   font-size: 18px;
@@ -3683,7 +3710,7 @@ button.swiper-pagination-bullet {
 }
 
 .annotation__text {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .annotation__text p {
