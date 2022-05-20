@@ -36,29 +36,17 @@ $(document).ready(function () {
     breakpoints: {
       320: {
         spaceBetween: 20,
-        slidesPerView: 1.2
+        slidesPerView: "auto",
+        freeMode: {
+          enabled: true,
+          sticky: false,
+          momentumBounce: false
+        }
       },
-      400: {
-        spaceBetween: 20,
-        slidesPerView: 1.4
-      },
-      480: {
-        spaceBetween: 20,
-        slidesPerView: 1.7
-      },
-      550: {
-        spaceBetween: 20,
-        slidesPerView: 2
-      },
-      660: {
-        spaceBetween: 20,
-        slidesPerView: 2.5
-      },
-      768: {
-        spaceBetween: 20,
-        slidesPerView: 3
-      },
-      970: {
+      990: {
+        freeMode: {
+          enabled: false
+        },
         spaceBetween: 20,
         slidesPerView: 1
       }
