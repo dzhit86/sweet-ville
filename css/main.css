@@ -26,6 +26,10 @@
   display: block;
 }
 
+.icon-rst:before {
+  content: "\e910";
+}
+
 .icon-clock:before {
   content: "\e90e";
 }
@@ -2276,6 +2280,28 @@ button.swiper-pagination-bullet {
   margin-top: 40px;
 }
 
+.about__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #00BADF;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.about__icon > span {
+  color: #fff;
+  font-size: 1.7em;
+}
+
 .about__tip {
   position: absolute;
   top: 0;
@@ -2283,14 +2309,13 @@ button.swiper-pagination-bullet {
   z-index: 3;
   background: #fff;
   border-radius: 5px;
-  padding: 8px 10px;
+  padding: 5px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: 240px;
   -webkit-box-shadow: 0px 4px 7px rgba(184, 138, 196, 0.53);
   box-shadow: 0px 4px 7px rgba(184, 138, 196, 0.53);
   -webkit-transform: translate(30%, -70%);
@@ -2298,16 +2323,9 @@ button.swiper-pagination-bullet {
   transform: translate(30%, -70%);
 }
 
-.about__tip img {
-  margin-right: 15px;
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
-}
-
-.about__tip span {
+.about__tip p {
   font-size: 14px;
-  line-height: 1.2em;
+  line-height: 1.1em;
 }
 
 .stats {
@@ -2511,13 +2529,13 @@ button.swiper-pagination-bullet {
   text-align: left;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px 25px;
+  grid-gap: 25px;
 }
 
 .catalog__item {
   -webkit-box-shadow: 0px 0px 5px rgba(184, 138, 196, 0.5);
   box-shadow: 0px 0px 5px rgba(184, 138, 196, 0.5);
-  padding: 20px 15px;
+  padding: 20px;
   background: #fff;
   border-radius: 5px;
   display: -webkit-box;
@@ -2538,11 +2556,14 @@ button.swiper-pagination-bullet {
 }
 
 .catalog__img {
-  width: 100%;
-  height: 250px;
-  border-radius: 5px;
+  max-width: 100%;
+  width: 250px;
+  height: 310px;
+  border-radius: 8px;
   overflow: hidden;
   margin-bottom: 15px;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .catalog__img img {
@@ -2559,7 +2580,7 @@ button.swiper-pagination-bullet {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .catalog__meta {
@@ -2606,7 +2627,8 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 0;
+  margin-top: auto;
+  margin-bottom: 15px;
 }
 
 .catalog__price {
@@ -2635,7 +2657,6 @@ button.swiper-pagination-bullet {
 
 .catalog__btn {
   width: 100%;
-  margin-top: auto;
 }
 
 .catalog__more {
@@ -2872,6 +2893,9 @@ button.swiper-pagination-bullet {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .adding-swiper__name {
@@ -2884,6 +2908,7 @@ button.swiper-pagination-bullet {
 .adding-swiper__description {
   color: #fff;
   font-size: 18px;
+  margin-bottom: 40px;
 }
 
 .adding-swiper__price {
@@ -3255,6 +3280,11 @@ button.swiper-pagination-bullet {
   width: 100%;
 }
 
+.gallery-swiper {
+  max-width: 1135px;
+  margin: auto;
+}
+
 .gallery-swiper__wrap {
   display: grid;
   grid-gap: 20px;
@@ -3308,11 +3338,11 @@ button.swiper-pagination-bullet {
 }
 
 .gallery-swiper__btn_prev {
-  left: -50px;
+  left: 0;
 }
 
 .gallery-swiper__btn_next {
-  right: -50px;
+  right: 0;
 }
 
 .review {
@@ -3383,7 +3413,7 @@ button.swiper-pagination-bullet {
 }
 
 .review-swiper__title {
-  color: #B88AC4;
+  color: #C186C8;
   font-size: 22px;
   margin-bottom: 15px;
 }
@@ -3407,7 +3437,7 @@ button.swiper-pagination-bullet {
 
 .review-swiper__mark span {
   margin-right: 4px;
-  color: #4BB8DB;
+  color: #44CBE5;
   font-size: 18px;
 }
 
@@ -3426,8 +3456,8 @@ button.swiper-pagination-bullet {
 }
 
 .review-swiper__img {
-  width: 60px;
-  height: 60px;
+  width: 62px;
+  height: 62px;
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid #B88AC4;
@@ -4155,22 +4185,6 @@ button.swiper-pagination-bullet {
     margin-top: calc(20px + 20 * ((100vw - 320px) / 920));
   }
 
-  .about__tip {
-    max-width: calc(170px + 70 * ((100vw - 320px) / 920));
-  }
-
-  .about__tip img {
-    width: calc(25px + 25 * ((100vw - 320px) / 920));
-  }
-
-  .about__tip img {
-    height: calc(25px + 25 * ((100vw - 320px) / 920));
-  }
-
-  .about__tip span {
-    font-size: calc(11px + 3 * ((100vw - 320px) / 920));
-  }
-
   .stats__num {
     font-size: calc(23px + 5 * ((100vw - 320px) / 920));
   }
@@ -4420,14 +4434,6 @@ button.swiper-pagination-bullet {
     font-size: calc(14px + 4 * ((100vw - 320px) / 920));
   }
 
-  .review-swiper__img {
-    width: calc(50px + 10 * ((100vw - 320px) / 920));
-  }
-
-  .review-swiper__img {
-    height: calc(50px + 10 * ((100vw - 320px) / 920));
-  }
-
   .review-swiper__name {
     font-size: calc(16px + 2 * ((100vw - 320px) / 920));
   }
@@ -4600,6 +4606,27 @@ button.swiper-pagination-bullet {
 
   .about__text {
     max-width: unset;
+  }
+
+  .about__icon > span {
+    font-size: 1em;
+  }
+
+  .about__icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+  }
+
+  .about__tip p {
+    font-size: 12px;
+  }
+
+  .about__tip {
+    padding: 5px;
+    -webkit-transform: translate(40%, -70%);
+    -ms-transform: translate(40%, -70%);
+    transform: translate(40%, -70%);
   }
 
   .services__info {
@@ -4914,7 +4941,9 @@ button.swiper-pagination-bullet {
   }
 
   .about__tip {
-    max-width: 200px;
+    -webkit-transform: translate(30%, -70%);
+    -ms-transform: translate(30%, -70%);
+    transform: translate(30%, -70%);
   }
 
   .services__title {
@@ -5138,9 +5167,9 @@ button.swiper-pagination-bullet {
   }
 
   .about__tip {
-    -webkit-transform: translate(10px, -70%);
-    -ms-transform: translate(10px, -70%);
-    transform: translate(10px, -70%);
+    -webkit-transform: translate(20px, -70%);
+    -ms-transform: translate(20px, -70%);
+    transform: translate(20px, -70%);
   }
 
   .stats__item {
