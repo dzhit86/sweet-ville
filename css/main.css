@@ -2476,10 +2476,14 @@ button.swiper-pagination-bullet {
   height: 200px;
 }
 
-.catalog_bg .catalog__footer {
+.catalog_bg .catalog__description {
   margin-top: auto;
+}
+
+.catalog_bg .catalog__footer {
   margin-bottom: 20px;
   height: 30px;
+  margin-top: 0;
 }
 
 .catalog_bg .catalog__btn {
