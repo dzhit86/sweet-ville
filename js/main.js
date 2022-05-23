@@ -62,14 +62,26 @@ $(document).ready(function () {
     },
     breakpoints: {
       320: {
+        slidesPerView: "auto",
         spaceBetween: 20,
-        slidesPerView: 1.2
+        freeMode: {
+          enabled: true,
+          sticky: false,
+          momentumBounce: false
+        }
       },
       768: {
         spaceBetween: 20,
+        freeMode: {
+          enabled: false
+        },
         slidesPerView: 2
       },
-      993: {
+      992: {
+        spaceBetween: 25,
+        slidesPerView: 2.5
+      },
+      1260: {
         spaceBetween: 25,
         slidesPerView: 3
       }
@@ -85,16 +97,16 @@ $(document).ready(function () {
     },
     breakpoints: {
       320: {
-        spaceBetween: 20,
-        slidesPerView: 0.6,
+        spaceBetween: 10,
+        slidesPerView: "auto",
         freeMode: {
           enabled: true,
           sticky: false,
           momentumBounce: false
         }
       },
-      660: {
-        spaceBetween: 20,
+      1240: {
+        spaceBetween: 15,
         slidesPerView: 1,
         freeMode: {
           enabled: false
