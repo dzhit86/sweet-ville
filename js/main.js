@@ -37,6 +37,7 @@ $(document).ready(function () {
       320: {
         spaceBetween: 20,
         slidesPerView: "auto",
+        centeredSlides: true,
         freeMode: {
           enabled: true,
           sticky: false,
@@ -47,6 +48,7 @@ $(document).ready(function () {
         freeMode: {
           enabled: false
         },
+        centeredSlides: false,
         spaceBetween: 20,
         slidesPerView: 1
       }
@@ -64,6 +66,7 @@ $(document).ready(function () {
       320: {
         slidesPerView: "auto",
         spaceBetween: 20,
+        centeredSlides: true,
         freeMode: {
           enabled: true,
           sticky: false,
@@ -72,14 +75,11 @@ $(document).ready(function () {
       },
       768: {
         spaceBetween: 20,
+        centeredSlides: false,
         freeMode: {
           enabled: false
         },
         slidesPerView: 2
-      },
-      992: {
-        spaceBetween: 25,
-        slidesPerView: 2.5
       },
       1260: {
         spaceBetween: 25,
@@ -97,6 +97,7 @@ $(document).ready(function () {
     },
     breakpoints: {
       320: {
+        centeredSlides: true,
         spaceBetween: 10,
         slidesPerView: "auto",
         freeMode: {
@@ -106,6 +107,7 @@ $(document).ready(function () {
         }
       },
       1240: {
+        centeredSlides: false,
         spaceBetween: 15,
         slidesPerView: 1,
         freeMode: {

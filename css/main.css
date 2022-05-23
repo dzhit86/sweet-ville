@@ -6264,8 +6264,21 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     display: none;
   }
 
+  .adding ._container {
+    max-width: unset;
+    padding: 0;
+  }
+
   .adding__title::after {
     display: none;
+  }
+
+  .adding__title {
+    padding: 0 10px;
+  }
+
+  .adding__subtitle {
+    padding: 0 10px;
   }
 
   .adding__slider {
