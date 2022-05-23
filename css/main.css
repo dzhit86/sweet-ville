@@ -5297,7 +5297,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   }
 
   .adding__title::after {
-    width: 76px;
+    width: 80px;
     height: 77px;
   }
 
@@ -5766,11 +5766,11 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   }
 
   .hero__title::after {
-    width: 157px;
-    height: 151px;
-    -webkit-transform: translate(-15%, -25%);
-    -ms-transform: translate(-15%, -25%);
-    transform: translate(-15%, -25%);
+    width: 112px;
+    height: 108px;
+    -webkit-transform: translate(-15%, -50%);
+    -ms-transform: translate(-15%, -50%);
+    transform: translate(-15%, -50%);
   }
 
   .hero__title {
@@ -5956,6 +5956,12 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     -webkit-transform: translate(3%, -10%);
     -ms-transform: translate(3%, -10%);
     transform: translate(3%, -10%);
+  }
+
+  .adding__title::after {
+    -webkit-transform: translate(-50%, -55%);
+    -ms-transform: translate(-50%, -55%);
+    transform: translate(-50%, -55%);
   }
 
   .adding__subtitle {
