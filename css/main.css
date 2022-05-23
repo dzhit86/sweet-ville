@@ -5221,6 +5221,10 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .catalog__img {
+    width: 100%;
+  }
+
   .banner-order__wrap {
     padding: 60px 28px 20px 56px;
   }
@@ -5897,6 +5901,10 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     margin-left: -10px;
     padding: 10px 10px 20px;
     width: calc(100% + 10px);
+  }
+
+  .catalog__item {
+    min-width: 290px;
   }
 
   .banner-order__wrap {
