@@ -4175,6 +4175,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .prices__wrap::-webkit-scrollbar {
   width: 0px;
+  height: 0;
   background: transparent;
 }
 
@@ -4182,11 +4183,15 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   min-width: 1240px;
   width: 100%;
   border-collapse: collapse;
+  margin: 0 !important;
+  position: relative;
 }
 
 .prices__table th,
 .prices__table td {
   height: 1px;
+  border: none;
+  padding: 0 !important;
 }
 
 .prices__table th > div,
@@ -4194,32 +4199,41 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   height: 100%;
 }
 
-.prices__thead th {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.prices__table caption {
+  display: none;
+}
+
+.prices__table::after {
+  content: "";
+  display: none;
+}
+
+.prices thead th {
+  background: none !important;
+  border: none !important;
+  text-align: center !important;
   width: 210px;
 }
 
-.prices__thead th span {
+.prices thead th span {
   line-height: 1.2em;
   display: block;
   white-space: nowrap;
 }
 
-.prices__thead th span:first-child {
+.prices thead th span:first-child {
   font-size: 20px;
   font-weight: 400;
   color: #B88AC4;
   margin-bottom: 4px;
 }
 
-.prices__thead th span:last-child {
+.prices thead th span:last-child {
   font-size: 24px;
   font-weight: 500;
 }
 
-.prices__thead th > div {
+.prices thead th > div {
   border: 1px solid #D8D8D8;
   border-right: none;
   border-bottom: none;
@@ -4227,42 +4241,50 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   padding: 14px;
 }
 
-.prices__thead th:nth-child(1) {
+.prices thead th:nth-child(1) {
   width: 400px;
   min-width: 400px;
 }
 
-.prices__thead th:nth-child(2) > div {
+.prices thead th:nth-child(2) > div {
   border-top-left-radius: 8px;
 }
 
-.prices__thead th:last-child > div {
+.prices thead th:last-child > div {
   border-top-right-radius: 8px;
   border-right: 1px solid #D8D8D8;
 }
 
-.prices__tbody tr td > div {
+.prices tbody tr td {
+  border: none !important;
+}
+
+.prices tbody tr td > div {
   border-left: 1px solid #D8D8D8;
   border-bottom: 1px solid #D8D8D8;
   padding: 18px;
 }
 
-.prices__tbody tr td:first-child > div {
+.prices tbody tr td:first-child > div {
   text-align: left;
   font-weight: 300;
   line-height: 1.2em;
   max-width: 100%;
 }
 
-.prices__tbody tr:first-child td > div {
+.prices tbody tr td:last-child > div {
+  border-right: 1px solid #D8D8D8;
+}
+
+.prices tbody tr:first-child td > div {
   border-top: 1px solid #D8D8D8;
 }
 
-.prices__tbody tr:first-child td:first-child > div {
+.prices tbody tr:first-child td:first-child > div {
   border-top-left-radius: 8px;
 }
 
-.prices__tbody tr td:not(:first-child) > div {
+.prices tbody tr td:not(:first-child) > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4275,23 +4297,38 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   padding: 14px;
 }
 
-.prices__tbody tr td:not(:first-child) > div span {
+.prices tbody tr td:not(:first-child) > div span {
   font-size: 16px;
 }
 
-.prices__tbody tr td:not(:first-child) > div .icon-yes {
+.prices tbody tr td:not(:first-child) > div .icon-yes {
   color: #4BB8DB;
 }
 
-.prices__tbody tr td:not(:first-child) > div .icon-no {
+.prices tbody tr td:not(:first-child) > div .icon-no {
   color: #BBB5B5;
 }
 
-.prices__tbody tr td:not(:first-child):last-child {
-  border-right: 1px solid #D8D8D8;
+.prices tbody tr:last-child td:first-child > div {
+  border-bottom-left-radius: 8px;
 }
 
-.prices__tfoot td > div {
+.prices tbody tr:last-child td:last-child > div {
+  border-bottom-right-radius: 8px;
+}
+
+.prices tfoot th {
+  font-weight: 400 !important;
+}
+
+.prices tfoot th,
+.prices tfoot td {
+  background: none !important;
+  border: none !important;
+}
+
+.prices tfoot th > div,
+.prices tfoot td > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4305,7 +4342,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   padding-bottom: 25px;
 }
 
-.prices__tfoot .btn {
+.prices tfoot .btn {
   width: 90%;
 }
 
@@ -4509,7 +4546,8 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 25px;
+  margin-top: auto;
+  margin-bottom: 20px;
 }
 
 .review-swiper__mark span {
@@ -4523,7 +4561,6 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 
 .review-swiper__client {
-  margin-top: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4634,11 +4671,11 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   line-height: 1.2em;
 }
 
-.faq__ul {
+.faq__text ul {
   padding-left: 20px;
 }
 
-.faq__li {
+.faq__text li {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.2em;
@@ -4646,7 +4683,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   margin-bottom: 5px;
 }
 
-.faq__li:last-child {
+.faq__text li:last-child {
   margin-bottom: 0;
 }
 
@@ -4680,7 +4717,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .footer__item:first-child {
   justify-self: start;
-  max-width: 300px;
+  max-width: 260px;
 }
 
 .footer__logo {
@@ -5322,11 +5359,6 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     transform: translate(0, -30%);
   }
 
-  .ourarea__prices ._container {
-    max-width: unset;
-    padding: 0;
-  }
-
   .ourarea-swiper__img {
     width: 368px;
     height: 343px;
@@ -5346,8 +5378,22 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     transform: translateX(7%);
   }
 
+  .prices__wrap ._container {
+    max-width: unset;
+    padding: 0;
+  }
+
   .prices__table {
-    margin: 0 20px;
+    margin-left: 20px !important;
+  }
+
+  .prices__table::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 20px;
+    height: 20px;
   }
 
   .gallery-swiper__wrap {
@@ -5579,23 +5625,25 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     font-size: calc(21px + 9 * ((100vw - 320px) / 920));
   }
 
-  .prices__thead th > div {
+  .prices thead th > div {
     padding: calc(5px + 9 * ((100vw - 320px) / 920));
   }
 
-  .prices__tbody tr td > div {
+  .prices tbody tr td > div {
     padding: calc(14px + 4 * ((100vw - 320px) / 920));
   }
 
-  .prices__tbody tr td:not(:first-child) > div {
+  .prices tbody tr td:not(:first-child) > div {
     padding: calc(5px + 9 * ((100vw - 320px) / 920));
   }
 
-  .prices__tfoot td > div {
+  .prices tfoot th > div,
+  .prices tfoot td > div {
     padding-top: calc(15px + 10 * ((100vw - 320px) / 920));
   }
 
-  .prices__tfoot td > div {
+  .prices tfoot th > div,
+  .prices tfoot td > div {
     padding-bottom: calc(15px + 10 * ((100vw - 320px) / 920));
   }
 
@@ -5699,7 +5747,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     font-size: calc(16px + 2 * ((100vw - 320px) / 920));
   }
 
-  .faq__li {
+  .faq__text li {
     font-size: calc(16px + 2 * ((100vw - 320px) / 920));
   }
 
@@ -6028,11 +6076,11 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     transform: translateX(0);
   }
 
-  .prices__thead th span:first-child {
+  .prices thead th span:first-child {
     font-size: 16px;
   }
 
-  .prices__thead th span:last-child {
+  .prices thead th span:last-child {
     font-size: 18px;
   }
 
@@ -6337,22 +6385,28 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   .prices__table {
     width: unset;
     min-width: unset;
-    margin: 0 10px;
+    margin: 0 10px !important;
   }
 
-  .prices__thead th:nth-child(1) {
+  .prices__table::after {
+    width: 10px;
+    height: 10px;
+    right: -10px;
+  }
+
+  .prices thead th:nth-child(1) {
     width: 220px;
     min-width: 220px;
     max-width: 220px;
   }
 
-  .prices__thead th {
+  .prices thead th {
     width: 120px;
     min-width: 120px;
     max-width: 120px;
   }
 
-  .prices__tbody tr td:first-child > div {
+  .prices tbody tr td:first-child > div {
     font-size: 16px;
   }
 
